@@ -1,0 +1,43 @@
+.user-component {
+  display: flex;
+  gap: 16px;
+
+  margin-bottom: 20px;
+
+  &__circul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 30px;
+    color: $color-white;
+    background-color: $color-grey-2;
+
+    svg {
+      fill: $color-white-05;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__params {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-white;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $color-white;
+  }
+}

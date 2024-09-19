@@ -1,0 +1,23 @@
+.error-messsage {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: rgb(227, 14, 14);
+  text-align: center;
+}
+
+.error-errors {
+  position: absolute;
+  bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.error-isError {
+  position: absolute;
+  bottom: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}

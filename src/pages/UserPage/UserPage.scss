@@ -1,0 +1,27 @@
+.user-page {
+  margin-bottom: 64px;
+
+  &__h2 {
+    margin-bottom: 64px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: $color-white;
+  }
+
+  &__navlink {
+    position: relative;
+    margin-right: 24px;
+    text-decoration: none;
+    color: $color-white;
+    font-size: 24px;
+
+    svg {
+      fill: $color-white;
+    }
+  }
+
+  &:hover {
+    color: $color-purple-hover;
+  }
+}

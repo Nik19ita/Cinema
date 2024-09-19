@@ -1,0 +1,46 @@
+.player {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $background-color-popup;
+  z-index: 1;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    position: relative;
+    margin: 200px auto 0;
+    width: 70%;
+    height: 500px;
+    background-color: white;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80px;
+    background-color: $background-color-player;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: $color-white;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -74px;
+    cursor: pointer;
+  }
+}

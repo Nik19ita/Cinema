@@ -1,0 +1,68 @@
+$color-purple-hover: #dc5dfc;
+$color-purple: #6a5dc2;
+$color-white: #ffffff;
+$color-white-07: #ffffffb2;
+$color-white-05: #ffffffb2;
+$color-grey-1: #393b3c;
+$color-grey-2: #ffffff80;
+$color-grey-3: #3c3c3c;
+$color-grey-4: #616161;
+$color-black: #000000;
+$color-placeholder: #00000066;
+$color-placeholder-hover: #b4a9ff;
+$color-error: #ff7575;
+$background-color-popup: #00000080;
+$background-color-player: #0a0b0b80;
+$background-color-about-film: #747474;
+
+$width-1440: calc((100% - (40px * 3)) / 4);
+$width-320: calc((100% - (40px * 3)) / 4);
+
+@mixin button-big {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-right: 16px;
+  min-height: 56px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  border-radius: 28px;
+  color: $color-white;
+}
+
+@mixin button-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 68px;
+  min-height: 56px;
+  color: $color-grey-1;
+  background: $color-grey-1;
+  border: none;
+  border-radius: 28px;
+}
+
+@keyframes activeUnderline {
+  from {
+    width: 0;
+    left: 50%;
+  }
+
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@keyframes rotate-spinner {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

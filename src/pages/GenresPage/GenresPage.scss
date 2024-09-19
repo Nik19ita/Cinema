@@ -1,0 +1,19 @@
+.genres-page {
+  padding: 64px 80px 160px;
+
+  &__h2 {
+    margin-bottom: 64px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: $color-white;
+  }
+
+  &__cards-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    column-gap: 40px;
+  }
+}

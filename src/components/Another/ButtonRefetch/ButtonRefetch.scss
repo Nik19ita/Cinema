@@ -1,0 +1,12 @@
+.button-refetch {
+    @include button-small;
+
+    &__svg {
+        fill: $color-white;
+    }
+
+    &:hover svg {
+        stroke: $color-purple;
+        fill: $color-purple;
+    }
+}

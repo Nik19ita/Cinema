@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  width: 224px;
+  height: 336px;
+  border-radius: 16px;
+  background-size: cover;
+  background-color: $color-grey-3;
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.33);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.number-card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -12px;
+  left: -12px;
+  width: 62px;
+  height: 48px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(106, 93, 194, 1);
+  transform: scale(1);
+}

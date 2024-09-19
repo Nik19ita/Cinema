@@ -1,0 +1,43 @@
+.div-for-tooltip {
+  position: relative;
+  max-width: 559px;
+  flex-grow: 1;
+}
+
+.input-search {
+  width: 100%;
+  padding-left: 45px;
+  height: 48px;
+  font-size: 18px;
+  color: $color-white;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-grey-1;
+  background-image: url("../../../assets/img/svg-for-inputSearch.svg");
+  background-size: 24px;
+  background-position: 16px 11px;
+  background-repeat: no-repeat;
+}
+
+.input-search::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.input-search:focus-visible {
+  outline: none;
+}
+
+.input-search:active(:not(:focus-visible)),
+.input-search:hover(:not(:focus-visible)) {
+  outline: none;
+}
+
+.remove {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}

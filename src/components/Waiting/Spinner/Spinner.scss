@@ -1,0 +1,12 @@
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2.4px solid $color-white;
+    border-radius: 100px;
+    border-bottom-color: transparent;
+    animation-name: rotate-spinner;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}

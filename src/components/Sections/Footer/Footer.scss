@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+
+  @mixin footer-text {
+    margin-right: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &__LLC {
+    @include footer-text;
+    color: $color-white;
+  }
+
+  &__rights {
+    @include footer-text;
+    padding-left: 30px;
+    background-image: url("../../assets/rights.svg");
+    background-repeat: no-repeat;
+    color: $color-white-07;
+  }
+
+  &__right-block {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+
+    a {
+      width: 36px;
+      height: 36px;
+    }
+
+    svg:hover rect {
+      stroke: $color-purple-hover;
+    }
+
+    svg:hover path {
+      fill: $color-purple-hover;
+    }
+  }
+}

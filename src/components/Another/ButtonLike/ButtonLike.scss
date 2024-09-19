@@ -1,0 +1,13 @@
+.button-like {
+    @include button-small;
+}
+
+.button-like:hover .like {
+    stroke: $color-purple;
+    fill: $color-purple;
+}
+
+.button-like:hover .aslike {
+    stroke: $color-purple;
+    fill: $color-purple;
+}

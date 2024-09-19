@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Play";
+  src:
+    local("PlayBold"),
+    url("./assets/fonts/PlayBold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Play";
+  src:
+    local("PlayRegular"),
+    url("./assets/fonts/PlayRegular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  background-color: $color-black;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000000s ease-in-out 0s;
+}
+
+.button-purple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 48px;
+  min-height: 56px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $color-white;
+  background-color: rgba(106, 93, 194, 1);
+  border: none;
+  border-radius: 28px;
+}
+
+.button-purple:hover {
+  background-color: $color-placeholder-hover;
+}
+
+.button-transparent {
+  border: none;
+  background-color: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.button-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  background-color: $color-purple-hover;
+  animation: activeUnderline 0.3s 1 normal linear forwards;
+}
+
+form {
+  position: relative;
+  margin-bottom: 24px;
+}

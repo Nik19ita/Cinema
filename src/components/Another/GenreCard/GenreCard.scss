@@ -1,0 +1,67 @@
+.genre-card {
+  display: flex;
+  align-items: end;
+  width: $width-1440;
+  height: 304px;
+  border: none;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  background-color: $color-grey-4;
+  overflow: hidden;
+  box-shadow: 0px 0px 80px 0px #ffffff54;
+
+  &__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 84px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    border: none;
+    color: white;
+    background-color: black;
+  }
+
+  &:hover:not(:focus-visible) {
+    transform: scale(1.1);
+  }
+
+  &:active:not(:focus-visible) {
+    outline: none;
+    transform: scale(1);
+  }
+}
+
+.drama {
+  background-image: url("../../../assets/img/genres/drama.png");
+}
+
+.comedy {
+  background-image: url("../../../assets/img/genres/comedy.png");
+}
+
+.crime {
+  background-image: url("../../../assets/img/genres/crime.png");
+}
+
+.family {
+  background-image: url("../../../assets/img/genres/family.png");
+}
+
+.history {
+  background-image: url("../../../assets/img/genres/history.png");
+}
+
+.thriller {
+  background-image: url("../../../assets/img/genres/thriller.png");
+}
+
+.fantasy {
+  background-image: url("../../../assets/img/genres/fantasy.png");
+}
+
+.action {
+  background-image: url("../../../assets/img/genres/action.png");
+}

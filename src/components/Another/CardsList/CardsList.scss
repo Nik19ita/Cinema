@@ -1,0 +1,10 @@
+.list-films {
+
+  &__content {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 64px;
+  }
+}

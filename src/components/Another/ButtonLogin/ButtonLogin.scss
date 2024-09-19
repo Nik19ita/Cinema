@@ -1,0 +1,11 @@
+.button-login {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  color: $color-white;
+  font-size: 24px;
+}
+
+.button-login:hover {
+  color: $color-purple-hover;
+}

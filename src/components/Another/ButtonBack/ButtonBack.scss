@@ -1,0 +1,30 @@
+.button-back {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+  border: none;
+  background-color: transparent;
+  color: $color-white;
+
+  &__arrow-back {
+    margin-right: 20px;
+    fill: $color-white;
+  }
+
+  &__h2 {
+    display: inline-block;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+
+  &:hover {
+    color: $color-purple-hover;
+    fill: $color-purple-hover;
+  }
+
+  &:hover &__arrow-back {
+    color: $color-purple-hover;
+    fill: $color-purple-hover;
+  }
+}

@@ -1,0 +1,11 @@
+.user {
+  position: relative;
+  font-size: 24px;
+  color: $color-white;
+  border: none;
+  background-color: inherit;
+}
+
+.user:hover {
+  color: $color-purple-hover;
+}

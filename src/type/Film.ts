@@ -1,0 +1,29 @@
+export interface IFilm {
+  some(): unknown;
+  id: number;
+  title: string;
+  originalTitle: string;
+  language: string;
+  releaseYear: number;
+  releaseDate: string;
+  genres: Array<string>;
+  plot: string;
+  runtime: number;
+  budget: string;
+  revenue: string;
+  homepage: string;
+  status: string;
+  posterUrl: string;
+  backdropUrl: string;
+  trailerUrl: string;
+  trailerYouTubeId: string;
+  tmdbRating: number;
+  searchL: string;
+  keywords: Array<string>;
+  countriesOfOrigin: Array<string>;
+  languages: Array<string>;
+  cast: Array<string>;
+  director: string;
+  production: string;
+  awardsSummary: string;
+}
