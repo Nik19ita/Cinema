@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Link } from "react-router-dom";
 import { IFilm } from "../../../type/Film";
-import RaitingBlock from "../../Another/RaitingBlock/RaitingBlock";
+import RaitingBlock from "../../Common/RaitingBlock/RaitingBlock";
 import "./TooltipCard.scss";
 
 interface ITooltipComponentProps {

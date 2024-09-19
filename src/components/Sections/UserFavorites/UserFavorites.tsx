@@ -1,5 +1,5 @@
 import useQueryFavoritesFilms from "../../../hooks/QueryFavoritesFilms";
-import { CardsList } from "../../Another/CardsList/CardsList";
+import CardsList from "../../Common/CardsList/CardsList";
 import "./UserFavorites.scss";
 
 const UserFavorites = () => {

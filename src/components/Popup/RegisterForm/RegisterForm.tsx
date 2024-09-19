@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import useMutationRegister from "../../../hooks/MutateRegister";
 import CreateRegisterSchema from "../../../type/ZodSchemaReister";
-import ButtonChangePopup from "../ButtonChangePopup/ButtonChangepopu";
+import ButtonChangePopup from "../ButtonChangePopup/ButtonChangepopup";
 import ButtonEnter from "../ButtonEnter/ButtonEnter";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import InputPopup from "../InputPopup/InputPopup";
@@ -12,7 +12,7 @@ import "./RegisterForm.scss";
 
 type CreateRegisterType = z.infer<typeof CreateRegisterSchema>;
 
-export const Register = () => {
+const Register = () => {
   const [changeInput, setChangeInput] = useState(false);
 
   const {
@@ -95,3 +95,5 @@ export const Register = () => {
     </>
   );
 };
+
+export default Register;

@@ -1,6 +1,6 @@
 import useQueryProfile from "../../../hooks/QueryProfile.ts";
-import ButtonLogout from "../../Another/ButtonLogout/ButtonLogout.tsx";
-import UserComponent from "../../Another/UserPageComponent/UserPageComponent.tsx";
+import ButtonLogout from "../../Buttons/ButtonLogout/ButtonLogout.tsx";
+import UserComponent from "../../Common/UserPageComponent/UserPageComponent.tsx";
 import "./UserPersonalData.scss";
 
 const UserPersonalData = () => {

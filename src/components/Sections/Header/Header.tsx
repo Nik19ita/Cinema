@@ -1,11 +1,11 @@
 /// <reference types="vite-plugin-svgr/client" />
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../../../assets/img/cinema.svg?react";
-import { Account } from "../../Another/Account/Account";
-import { InputSearch } from "../../Another/InputSearch/InputSearch";
+import Account from "../../Common/Account/Account";
+import InputSearch from "../../Common/InputSearch/InputSearch";
 import "./Header.scss";
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className="header">
       <Link to="/" className="header__logo">
@@ -28,3 +28,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;

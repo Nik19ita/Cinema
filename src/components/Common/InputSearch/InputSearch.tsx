@@ -5,7 +5,7 @@ import { useAppSelector } from "../../../hooks/ReduxHook";
 import TooltipContainer from "../../Tooltip/TooltipContainer/TooltipContainer";
 import "./InputSearch.scss";
 
-export const InputSearch = () => {
+const InputSearch = () => {
   const [value, setValue] = useState("");
   const { key } = useLocation();
   const openModal = useAppSelector((state) => state.project.modal.open);
@@ -32,3 +32,5 @@ export const InputSearch = () => {
     </div>
   );
 };
+
+export default InputSearch;

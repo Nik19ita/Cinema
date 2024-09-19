@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import useMutationLogin from "../../../hooks/MutationLogin";
 import CreateLoginSchema from "../../../type/ZodSchemaLogin";
-import ButtonChangePopup from "../ButtonChangePopup/ButtonChangepopu";
+import ButtonChangePopup from "../ButtonChangePopup/ButtonChangepopup";
 import ButtonEnter from "../ButtonEnter/ButtonEnter";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import InputPopup from "../InputPopup/InputPopup";
@@ -12,7 +12,7 @@ import "./LoginForm.scss";
 
 type CreateLoginType = z.infer<typeof CreateLoginSchema>;
 
-export const Login = () => {
+const Login = () => {
   const [changeInput, setChangeInput] = useState(false);
 
   const {
@@ -63,3 +63,5 @@ export const Login = () => {
     </>
   );
 };
+
+export default Login;

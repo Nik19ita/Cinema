@@ -1,4 +1,4 @@
-import { GenreCard } from "../../components/Another/GenreCard/GenreCard";
+import GenreCard from "../../components/Common/GenreCard/GenreCard";
 import "./GenresPage.scss";
 
 export const GenresPage = () => {

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import js from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import prettierPlugin from "eslint-plugin-prettier";

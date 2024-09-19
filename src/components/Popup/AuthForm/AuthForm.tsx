@@ -10,7 +10,7 @@ interface IAuthForm {
   openPopup: boolean;
 }
 
-export const AuthForm: FC<IAuthForm> = ({ openPopup }) => {
+const AuthForm: FC<IAuthForm> = ({ openPopup }) => {
   const popupType = useAppSelector((state) => state.project.modal.typeModal);
 
   return (
@@ -39,3 +39,5 @@ export const AuthForm: FC<IAuthForm> = ({ openPopup }) => {
     </AnimatePresence>
   );
 };
+
+export default AuthForm;

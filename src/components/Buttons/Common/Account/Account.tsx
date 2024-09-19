@@ -1,10 +1,12 @@
-import AcсountComponent from "../AccountComponent/AccountComponent";
+import { div } from "framer-motion/client";
 import "./Account.scss";
 
-export const Account = () => {
+const Account = () => {
   return (
     <div className="account">
       <AcсountComponent />
     </div>
   );
 };
+
+export default Account;

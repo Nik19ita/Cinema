@@ -1,8 +1,8 @@
 import useQueryTopFilms from "../../../hooks/QueryTopFilms";
-import { CardsList } from "../../Another/CardsList/CardsList";
+import CardsList from "../../Common/CardsList/CardsList";
 import "./TopFilms.scss";
 
-export const TopFilms = () => {
+const TopFilms = () => {
   const { data, isSuccess } = useQueryTopFilms();
 
   return (
@@ -14,3 +14,5 @@ export const TopFilms = () => {
     </section>
   );
 };
+
+export default TopFilms;

@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { Login } from "../LoginForm/LoginForm";
-import { Register } from "../RegisterForm/RegisterForm";
-import { Succes } from "../SuccesPopup/SuccesPopup";
+import Login from "../LoginForm/LoginForm";
+import Register from "../RegisterForm/RegisterForm";
+import Succes from "../SuccesPopup/SuccesPopup";
 
 interface IPopupTypeProps {
   popupType: "login" | "register" | "succes";

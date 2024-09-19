@@ -5,7 +5,7 @@ import VK from "../../../assets/img/vk.svg?react";
 import YOUTUBE from "../../../assets/img/youtube.svg?react";
 import "./Footer.scss";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="footer">
       <div>
@@ -30,3 +30,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

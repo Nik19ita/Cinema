@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { PosterFilm } from "../../components/Sections/PosterFilm/PosterFilm";
+import PosterFilm from "../../components/Sections/PosterFilm/PosterFilm";
 import useQueryFilm from "../../hooks/QueryFilm";
 import "./AboutFilmPage.scss";
 

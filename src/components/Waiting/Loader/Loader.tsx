@@ -5,7 +5,7 @@ interface LoaderProps {
   className?: string;
 }
 
-export const Loader: FC<LoaderProps> = ({ className }) => {
+const Loader: FC<LoaderProps> = ({ className }) => {
   return (
     <div className={`loader ${className || ""}`}>
       <div className="loader-item" />
@@ -14,3 +14,5 @@ export const Loader: FC<LoaderProps> = ({ className }) => {
     </div>
   );
 };
+
+export default Loader;

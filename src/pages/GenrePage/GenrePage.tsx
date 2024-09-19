@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import ButtonBack from "../../components/Another/ButtonBack/ButtonBack";
-import ButtonShowMore from "../../components/Another/ButtonShowMore/ButtonShowMore";
-import { CardsList } from "../../components/Another/CardsList/CardsList";
+import ButtonBack from "../../components/Buttons/ButtonBack/ButtonBack";
+import ButtonShowMore from "../../components/Buttons/ButtonShowMore/ButtonShowMore";
+import CardsList from "../../components/Common/CardsList/CardsList";
 import QueryGenreFilms from "../../hooks/QueryGenreFilms";
 import "./GenrePage.scss";
 

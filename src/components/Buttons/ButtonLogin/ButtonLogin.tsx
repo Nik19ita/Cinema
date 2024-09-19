@@ -1,16 +1,16 @@
 import { FC } from "react";
+import { createPortal } from "react-dom";
 import { useAppDispatch, useAppSelector } from "../../../hooks/ReduxHook";
 import { useWhenOpenModal } from "../../../hooks/UseWhenOpenModal";
 import { isOpenModal } from "../../../store/slice";
-import { AuthForm } from "../../Popup/AuthForm/AuthForm";
+import AuthForm from "../../Popup/AuthForm/AuthForm";
 import "./ButtonLogin.scss";
-import { createPortal } from "react-dom";
 
 interface IButtonLoginProps {
   className?: string;
 }
 
-export const ButtonLogin: FC<IButtonLoginProps> = ({ className }) => {
+const ButtonLogin: FC<IButtonLoginProps> = ({ className }) => {
   const dispatch = useAppDispatch();
   const openModal = useAppSelector((state) => state.project.modal.open);
   const rootElement = document.getElementById("modal-root")!;
@@ -28,3 +28,5 @@ export const ButtonLogin: FC<IButtonLoginProps> = ({ className }) => {
     </>
   );
 };
+
+export default ButtonLogin;

@@ -1,7 +1,7 @@
 import { FC, useEffect } from "react";
 import { useAppDispatch } from "../../../hooks/ReduxHook";
 import { changeModal, isOpenModal } from "../../../store/slice";
-import { Loader } from "../../Waiting/Loader";
+import Loader from "../../Waiting/Loader/Loader";
 import "./ButtonEnter.scss";
 
 interface IButtonEnterProps {

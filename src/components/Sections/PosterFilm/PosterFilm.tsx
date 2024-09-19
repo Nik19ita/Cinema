@@ -1,17 +1,17 @@
 import { FC, useEffect } from "react";
 import useQueryFilm from "../../../hooks/QueryFilm";
-import ButtonAboutFilm from "../../Another/ButtonAboutFilm/ButtonAboutFilm";
-import ButtonLike from "../../Another/ButtonLike/ButtonLike";
-import ButtonRefetch from "../../Another/ButtonRefetch/ButtonRefetch";
-import ButtonTrailer from "../../Another/ButtonTreiler/ButtonTrailer";
-import RaitingBlock from "../../Another/RaitingBlock/RaitingBlock";
+import ButtonAboutFilm from "../../Buttons/ButtonAboutFilm/ButtonAboutFilm";
+import ButtonLike from "../../Buttons/ButtonLike/ButtonLike";
+import ButtonRefetch from "../../Buttons/ButtonRefetch/ButtonRefetch";
+import ButtonTrailer from "../../Buttons/ButtonTreiler/ButtonTrailer";
+import RaitingBlock from "../../Common/RaitingBlock/RaitingBlock";
 import "./PosterFilm.scss";
 
 interface IPosterFilmProps {
   idFilm?: number;
 }
 
-export const PosterFilm: FC<IPosterFilmProps> = ({ idFilm }) => {
+const PosterFilm: FC<IPosterFilmProps> = ({ idFilm }) => {
   const { data, isSuccess, refetch, isFetching } = useQueryFilm(idFilm);
 
   useEffect(() => {}, []);
@@ -62,3 +62,5 @@ export const PosterFilm: FC<IPosterFilmProps> = ({ idFilm }) => {
     );
   }
 };
+
+export default PosterFilm;

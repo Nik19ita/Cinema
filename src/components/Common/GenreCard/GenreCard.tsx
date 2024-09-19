@@ -7,7 +7,7 @@ interface IGenreCard {
   genreNameRus: string;
 }
 
-export const GenreCard: FC<IGenreCard> = ({ genreNameEng, genreNameRus }) => {
+const GenreCard: FC<IGenreCard> = ({ genreNameEng, genreNameRus }) => {
   return (
     <Link
       className={`genre-card ${genreNameEng}`}
@@ -18,3 +18,5 @@ export const GenreCard: FC<IGenreCard> = ({ genreNameEng, genreNameRus }) => {
     </Link>
   );
 };
+
+export default GenreCard;

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import queryFilmsSearch from "../../../hooks/QueryFilmsSearch";
 import Spinner from "../../Waiting/Spinner/Spinner";
-import TooltipCard from "../TooltipCard/TooltipCard.";
+import TooltipCard from "../TooltipCard/TooltipCard";
 import "./TooltipComponent.scss";
 
 interface ITooltipComponentProps {

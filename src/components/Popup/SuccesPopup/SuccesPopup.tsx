@@ -2,7 +2,7 @@ import { useAppDispatch } from "../../../hooks/ReduxHook";
 import { changeModal } from "../../../store/slice";
 import "./SuccesPopup.scss";
 
-export const Succes = () => {
+const Succes = () => {
   const dispatch = useAppDispatch();
 
   return (
@@ -20,3 +20,5 @@ export const Succes = () => {
     </div>
   );
 };
+
+export default Succes;

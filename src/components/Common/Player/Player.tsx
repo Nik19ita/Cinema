@@ -11,12 +11,7 @@ interface IPlayer {
   title: string;
 }
 
-export const Player: FC<IPlayer> = ({
-  openPlayer,
-  closePlayer,
-  videoId,
-  title,
-}) => {
+const Player: FC<IPlayer> = ({ openPlayer, closePlayer, videoId, title }) => {
   const [open, setOpen] = useState(true);
 
   return (
@@ -57,3 +52,5 @@ export const Player: FC<IPlayer> = ({
     </AnimatePresence>
   );
 };
+
+export default Player;

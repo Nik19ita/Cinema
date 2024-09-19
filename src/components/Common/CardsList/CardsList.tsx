@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { IFilm } from "../../../type/Film";
-import { CardFilm } from "../CardFilm/CardFilm";
+import CardFilm from "../CardFilm/CardFilm";
 import "./CardsList.scss";
 
 interface ICardListProps {
@@ -11,7 +11,7 @@ interface ICardListProps {
   countCard: number;
 }
 
-export const CardsList: FC<ICardListProps> = ({
+const CardsList: FC<ICardListProps> = ({
   list,
   listName,
   numberFilm,
@@ -37,3 +37,5 @@ export const CardsList: FC<ICardListProps> = ({
     </div>
   );
 };
+
+export default CardsList;

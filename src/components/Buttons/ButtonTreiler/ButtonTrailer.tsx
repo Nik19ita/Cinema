@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import { useWhenOpenModal } from "../../../hooks/UseWhenOpenModal";
-import { Player } from "../Player/Player";
+import { Player } from "../../Common/Player/Player";
 
 interface IButtonTrailer {
   videoId: string;

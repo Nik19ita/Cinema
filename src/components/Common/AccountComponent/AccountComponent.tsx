@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import useQueryProfile from "../../../hooks/QueryProfile";
-import { Loader } from "../../Waiting/Loader";
-import { ButtonLogin } from "../ButtonLogin/ButtonLogin";
+import ButtonLogin from "../../Buttons/ButtonLogin/ButtonLogin";
+import Loader from "../../Waiting/Loader/Loader";
 import "./AccountComponent.scss";
 
 const AccountComponent = () => {

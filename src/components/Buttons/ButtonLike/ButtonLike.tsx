@@ -1,7 +1,7 @@
 import { FC } from "react";
 import useQueryFavoritesFilms from "../../../hooks/QueryFavoritesFilms";
 import useOnClickLike from "../../../hooks/UseClickLike";
-import LikeViewType from "../LikeViewType/LikeViewType";
+import LikeViewType from "../../Common/LikeViewType/LikeViewType";
 import "./ButtonLike.scss";
 
 interface IButtonLikeView {

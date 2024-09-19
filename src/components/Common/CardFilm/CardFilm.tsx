@@ -8,7 +8,7 @@ interface ICardFilmProps {
   index?: number;
 }
 
-export const CardFilm: FC<ICardFilmProps> = ({ url, id, index }) => {
+const CardFilm: FC<ICardFilmProps> = ({ url, id, index }) => {
   return (
     <Link
       className="card"
@@ -21,3 +21,5 @@ export const CardFilm: FC<ICardFilmProps> = ({ url, id, index }) => {
     </Link>
   );
 };
+
+export default CardFilm;

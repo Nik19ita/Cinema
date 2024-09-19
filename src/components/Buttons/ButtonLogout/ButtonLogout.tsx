@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useQueryLogout from "../../../hooks/QueryLogout";
-import { Loader } from "../../Waiting/Loader";
+import Loader from "../../Waiting/Loader/Loader";
 
 const ButtonLogout = () => {
   const [logoutState, setLogoutState] = useState(false);
