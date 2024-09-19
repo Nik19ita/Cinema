@@ -21,7 +21,7 @@ const AuthForm: FC<IAuthForm> = ({ openPopup }) => {
           initial={false}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1, ease: "linear" }}
+          transition={{ duration: 0.3, ease: "linear" }}
         >
           <div className="popup__container">
             <motion.div

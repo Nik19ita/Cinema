@@ -10,13 +10,8 @@ interface ICardFilmProps {
 
 const CardFilm: FC<ICardFilmProps> = ({ url, id, index }) => {
   return (
-    <Link
-      className="card"
-      style={{
-        backgroundImage: `url(${url})`,
-      }}
-      to={`/movie/${id}`}
-    >
+    <Link className="card" to={`/movie/${id}`}>
+      <img className="card-img" src={url} alt="poster" loading="lazy" />
       {index !== undefined && <div className="number-card">{index + 1}</div>}
     </Link>
   );
