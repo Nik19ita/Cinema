@@ -3,7 +3,7 @@ import AsLike from "../../assets/img/aslike.svg?react";
 import Name from "../../assets/img/name.svg?react";
 import "./UserPage.scss";
 
-export const UserPage = () => {
+const UserPage = () => {
   return (
     <div className="user-page">
       <h2 className="user-page__h2">Мой аккаунт</h2>
@@ -18,3 +18,5 @@ export const UserPage = () => {
     </div>
   );
 };
+
+export default UserPage;

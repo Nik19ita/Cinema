@@ -3,13 +3,13 @@ import "./app.scss";
 import Layout from "./components/Layout/Layout";
 import UserFavorites from "./components/Sections/UserFavorites/UserFavorites";
 import UserPersonalData from "./components/Sections/UserPersonalData/UserPersonalData";
-import { AboutFilmPage } from "./pages/AboutFilmPage/AboutFilmPage";
+import AboutFilmPage from "./pages/AboutFilmPage/AboutFilmPage";
 import GenrePage from "./pages/GenrePage/GenrePage";
-import { GenresPage } from "./pages/GenresPage/GenresPage";
-import { MainPage } from "./pages/MainPage/MainPage";
-import { UserPage } from "./pages/UserPage/UserPage";
+import GenresPage from "./pages/GenresPage/GenresPage";
+import MainPage from "./pages/MainPage/MainPage";
+import UserPage from "./pages/UserPage/UserPage";
 
-export const App = () => {
+const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -17,7 +17,6 @@ export const App = () => {
         <Route path="genres" element={<GenresPage />} />
         <Route path="genres/:genre" element={<GenrePage />} />
         <Route path="movie/:movieId" element={<AboutFilmPage />} />
-
         <Route
           path="user-favorites"
           element={
@@ -27,7 +26,6 @@ export const App = () => {
             </section>
           }
         />
-
         <Route
           path="user-personal-data"
           element={
@@ -41,3 +39,5 @@ export const App = () => {
     </Routes>
   );
 };
+
+export default App;

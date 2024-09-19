@@ -1,7 +1,7 @@
 import GenreCard from "../../components/Common/GenreCard/GenreCard";
 import "./GenresPage.scss";
 
-export const GenresPage = () => {
+const GenresPage = () => {
   const genres = [
     ["drama", "Драма"],
     ["comedy", "Комедия"],
@@ -28,3 +28,5 @@ export const GenresPage = () => {
     </section>
   );
 };
+
+export default GenresPage;

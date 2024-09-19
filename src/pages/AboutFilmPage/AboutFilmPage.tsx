@@ -3,7 +3,7 @@ import PosterFilm from "../../components/Sections/PosterFilm/PosterFilm";
 import useQueryFilm from "../../hooks/QueryFilm";
 import "./AboutFilmPage.scss";
 
-export const AboutFilmPage = () => {
+const AboutFilmPage = () => {
   const { movieId } = useParams();
   const { data, isSuccess } = useQueryFilm(Number(movieId));
 
@@ -24,3 +24,5 @@ export const AboutFilmPage = () => {
     );
   }
 };
+
+export default AboutFilmPage;

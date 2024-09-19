@@ -6,7 +6,7 @@ import CardsList from "../../components/Common/CardsList/CardsList";
 import QueryGenreFilms from "../../hooks/QueryGenreFilms";
 import "./GenrePage.scss";
 
-export const GenrePage = () => {
+const GenrePage = () => {
   const [countFilmOnPage, setCountFilmOnPage] = useState(15);
   const {
     state: { genreNameEng, genreNameRus },
