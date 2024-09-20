@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { changeLikeView } from "../store/slice";
+import { changeAlertMessage, changeLikeView } from "../store/slice";
 import useMutateDeleteFavorites from "./MutateDeleteFavorites";
 import useMutateFavoritesFilm from "./MutateFavoritesFilm";
 import useQueryProfile from "./QueryProfile";
@@ -14,7 +14,10 @@ const useOnClickLike = (id: number) => {
 
   const likeClick = useCallback((): void => {
     if (!profile.isSuccess) {
-      alert("Войдите в профиль");
+      dispatch(changeAlertMessage(true));
+      setTimeout(() => {
+        dispatch(changeAlertMessage(false));
+      }, 1000);
     }
 
     if (likeView === "like") {

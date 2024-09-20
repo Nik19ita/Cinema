@@ -1,13 +1,25 @@
 .button-like {
+  position: relative;
+  &__button {
     @include button-small;
-}
+  }
 
-.button-like:hover .like {
+  &__button:hover .like,
+  &__button:hover .aslike {
     stroke: $color-purple;
     fill: $color-purple;
-}
+  }
 
-.button-like:hover .aslike {
-    stroke: $color-purple;
-    fill: $color-purple;
+  &__alert {
+    position: absolute;
+    width: 200px;
+    height: 28px;
+    bottom: -50px;
+    left: -66px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: $color-error;
+    background-color: $color-white;
+  }
 }

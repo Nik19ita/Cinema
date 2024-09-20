@@ -16,7 +16,12 @@ const TooltipCard: FC<ITooltipComponentProps> = ({ film }) => {
       key={`tooltip-card-${id}`}
       to={`movie/${id}`}
     >
-      <img className="tooltip-card__img" src={`${posterUrl}`} alt="обложка" />
+      <img
+        className="tooltip-card__img"
+        src={`${posterUrl}`}
+        alt="обложка"
+        loading="lazy"
+      />
 
       <div className="tooltip-card__content">
         <RaitingBlock
