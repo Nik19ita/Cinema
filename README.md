@@ -1,4 +1,4 @@
-### This site is developed using React and TS. The builder used is vite. Desctop version (1440px).
+### This site is developed using React and TS. The builder used is vite. Desktop version (1440px).
 
 Libraries are used in the project: **React Router**, **Redux Toolkit**, **React Hook Form**, **Zod**, **Tanstack Query**, **Framer Motion**.
 
